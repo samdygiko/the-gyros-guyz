@@ -59,10 +59,15 @@ export default function FindUs() {
               ))}
             </div>
 
-            <p className="font-body text-xs mt-8 max-w-md" style={{ color: "var(--ink)", opacity: 0.55 }}>
-              {/* TODO: swap to the client's Instagram handle once they supply it */}
-              Instagram coming soon.
-            </p>
+            <a
+              href="https://www.instagram.com/thegyrosguyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-8 text-sm font-medium underline underline-offset-4"
+              style={{ color: "var(--cobalt)" }}
+            >
+              Follow us on Instagram ↗
+            </a>
           </div>
 
           <div className="md:col-span-6 md:pl-10 md:border-l border-ink/15">

@@ -36,6 +36,23 @@ export default function Hero() {
             Walk-up only · No reservations
           </span>
         </div>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Hooch+%26+Candy+82+Bedford+Pl+Southampton+SO15+2BX"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-6 md:mt-8 text-sm md:text-[15px] font-body font-medium hover:underline underline-offset-4"
+          style={{ color: "var(--ink)" }}
+          aria-label="4.4 out of 5 stars from 117 Google reviews"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5B400" aria-hidden="true">
+            <path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7L12 17.5 5.7 21.2l1.7-7L2 9.5l7.1-.6L12 2z" />
+          </svg>
+          <span>
+            <strong style={{ fontWeight: 600 }}>4.4</strong>
+            <span style={{ opacity: 0.55 }}> · 117 reviews on Google ↗</span>
+          </span>
+        </a>
       </div>
     </section>
   );

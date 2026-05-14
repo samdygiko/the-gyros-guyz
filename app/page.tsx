@@ -4,6 +4,7 @@ import Menu from "./components/Menu";
 import TheKiosk from "./components/TheKiosk";
 import TonightStrip from "./components/TonightStrip";
 import Snaps from "./components/Snaps";
+import MoreFromTheGrill from "./components/MoreFromTheGrill";
 import FindUs from "./components/FindUs";
 import SiteFooter from "./components/SiteFooter";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <TheKiosk />
         <TonightStrip />
         <Snaps />
+        <MoreFromTheGrill />
         <FindUs />
       </main>
       <SiteFooter />

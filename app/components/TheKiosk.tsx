@@ -34,10 +34,10 @@ export default function TheKiosk() {
 
         <figure className="md:col-span-7 relative overflow-hidden aspect-[4/3] md:aspect-[16/10] bg-cream">
           <Image
-            src="/images/unsplash/bar-interior.jpg"
-            alt="Hooch &amp; Candy bar interior with warm lighting and the kiosk counter at the back"
-            width={2000}
-            height={1500}
+            src="/images/real/GYROS GUYS 6.jpeg"
+            alt="TheGyrosGuyz kiosk at the back of Hooch &amp; Candy, lit warm"
+            width={1600}
+            height={1200}
             sizes="(max-width: 768px) 100vw, 58vw"
             className="absolute inset-0 w-full h-full object-cover"
           />

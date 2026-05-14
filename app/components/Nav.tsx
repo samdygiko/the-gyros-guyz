@@ -14,10 +14,18 @@ export default function Nav() {
         <Link
           href="/"
           aria-label="TheGyrosGuyz — home"
-          className="font-display text-[1.3rem] md:text-[1.7rem] tracking-tight leading-none"
+          className="flex flex-col leading-none"
           style={{ color: "var(--bubblegum)" }}
         >
-          TheGyrosGuyz
+          <span className="font-display text-[1.3rem] md:text-[1.7rem] tracking-tight leading-none">
+            TheGyrosGuyz
+          </span>
+          <span
+            className="font-body italic text-[10px] md:text-[11px] tracking-wide mt-1 md:mt-1.5"
+            style={{ color: "var(--cobalt)", opacity: 0.85 }}
+          >
+            Fresh, deluxe Greek cuisine with a spin.
+          </span>
         </Link>
 
         <div className="flex items-center gap-4 md:gap-7">

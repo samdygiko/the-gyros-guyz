@@ -49,7 +49,7 @@ export default function OpenNowPill() {
     return (
       <span
         className="inline-flex items-center gap-2 px-3 py-1.5 text-[11px] md:text-xs font-body font-medium leading-none whitespace-nowrap"
-        style={{ background: "var(--bubblegum)", color: "var(--white)" }}
+        style={{ background: "#e84c30", color: "var(--white)" }}
       >
         <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--white)" }} aria-hidden />
         <span className="hidden md:inline">Closing soon · {dur}</span>
