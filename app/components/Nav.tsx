@@ -20,16 +20,16 @@ export default function Nav() {
           <Image
             src="/images/logo.webp"
             alt="The Gyros Guyz"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             priority
-            className="h-[56px] md:h-[70px] w-auto"
+            className="h-[50px] w-auto"
           />
           <span
-            className="hidden sm:inline font-body italic text-[11px] md:text-xs tracking-wide max-w-[180px] leading-snug"
-            style={{ color: "var(--cobalt)", opacity: 0.85 }}
+            className="font-display font-bold text-[1.35rem] md:text-[1.75rem] leading-none tracking-tight"
+            style={{ color: "#2B4EAE" }}
           >
-            Fresh, deluxe Greek cuisine with a spin.
+            TheGyrosGuyz
           </span>
         </Link>
 
