@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -5,21 +7,21 @@ export default function Hero() {
       className="bg-cream"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10 pt-10 md:pt-20 pb-14 md:pb-24 flex flex-col items-center text-center">
-        <h1
-          id="brand-bomb"
-          className="font-display leading-[0.9] tracking-tight"
-          style={{
-            color: "var(--bubblegum)",
-            fontSize: "clamp(4rem, 13vw, 11rem)",
-          }}
-        >
-          TheGyrosGuyz
+        <h1 id="brand-bomb" className="m-0">
+          <Image
+            src="/images/logo.webp"
+            alt="The Gyros Guyz"
+            width={180}
+            height={180}
+            priority
+            className="mx-auto h-auto w-[180px] md:w-[220px]"
+          />
         </h1>
         <p
-          className="font-body font-medium mt-6 md:mt-10 text-lg md:text-2xl"
+          className="font-body italic font-medium mt-6 md:mt-10 text-lg md:text-2xl"
           style={{ color: "var(--ink)" }}
         >
-          Greek street food, inside Hooch &amp; Candy.
+          Fresh, deluxe Greek cuisine with a spin.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mt-8 md:mt-12">

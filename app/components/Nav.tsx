@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import OpenNowPill from "./OpenNowPill";
 
 const links = [
@@ -10,18 +11,22 @@ const links = [
 export default function Nav() {
   return (
     <header className="w-full bg-cream relative z-10">
-      <div className="mx-auto max-w-7xl px-5 md:px-10 py-4 md:py-5 flex items-center justify-between gap-3 md:gap-6">
+      <div className="mx-auto max-w-7xl px-5 md:px-10 py-3 md:py-4 flex items-center justify-between gap-3 md:gap-6">
         <Link
           href="/"
-          aria-label="TheGyrosGuyz — home"
-          className="flex flex-col leading-none"
-          style={{ color: "var(--bubblegum)" }}
+          aria-label="The Gyros Guyz — home"
+          className="flex items-center gap-3"
         >
-          <span className="font-display text-[1.3rem] md:text-[1.7rem] tracking-tight leading-none">
-            TheGyrosGuyz
-          </span>
+          <Image
+            src="/images/logo.webp"
+            alt="The Gyros Guyz"
+            width={70}
+            height={70}
+            priority
+            className="h-[56px] md:h-[70px] w-auto"
+          />
           <span
-            className="font-body italic text-[10px] md:text-[11px] tracking-wide mt-1 md:mt-1.5"
+            className="hidden sm:inline font-body italic text-[11px] md:text-xs tracking-wide max-w-[180px] leading-snug"
             style={{ color: "var(--cobalt)", opacity: 0.85 }}
           >
             Fresh, deluxe Greek cuisine with a spin.
