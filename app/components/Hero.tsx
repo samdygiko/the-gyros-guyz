@@ -1,5 +1,20 @@
 import Image from "next/image";
 
+const heroImages: { src: string; alt: string }[] = [
+  {
+    src: "https://images.unsplash.com/photo-1561651823-34feb02250e4?w=800&q=80",
+    alt: "A freshly built gyros wrap stacked with meat, tomato, red onion and tzatziki",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800&q=80",
+    alt: "Grilled souvlaki skewers fresh off the charcoal",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    alt: "Grilled halloumi served with fresh salad and herbs",
+  },
+];
+
 export default function Hero() {
   return (
     <section
@@ -7,19 +22,40 @@ export default function Hero() {
       className="bg-cream"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10 pt-10 md:pt-20 pb-14 md:pb-24 flex flex-col items-center text-center">
-        <h1 id="brand-bomb" className="m-0">
-          <Image
-            src="/images/logo.webp"
-            alt="The Gyros Guyz"
-            width={180}
-            height={180}
-            priority
-            className="mx-auto h-auto w-[180px] md:w-[220px]"
-          />
+        <h1 id="brand-bomb" className="sr-only">
+          The Gyros Guyz
         </h1>
+
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+          {heroImages.map((img, i) => (
+            <figure
+              key={i}
+              className="relative overflow-hidden rounded-2xl bg-white aspect-[3/4]"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={800}
+                height={1067}
+                priority={i === 0}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(22,20,34,0.18), rgba(22,20,34,0) 45%)",
+                }}
+              />
+            </figure>
+          ))}
+        </div>
+
         <p
-          className="font-body italic font-medium mt-6 md:mt-10 text-lg md:text-2xl"
-          style={{ color: "var(--ink)" }}
+          className="font-body italic font-medium mt-6 md:mt-8 text-base md:text-lg"
+          style={{ color: "var(--ink)", opacity: 0.6 }}
         >
           Fresh, deluxe Greek cuisine with a spin.
         </p>
